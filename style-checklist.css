@@ -1,0 +1,96 @@
+.bg-div-flex .box-1{
+    border-radius: 25px;
+    width: 80%;
+    height: 12% !important;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #27C5FF;
+}
+.things-to-do{
+    height: 5%;
+    width: 100%;
+
+}
+.things-to-do h1{
+    position: absolute;
+    text-align: center !important;
+    top: 8%;
+    color: #27C5FF;
+    font-size: 250%;
+}
+.advice {
+    background-color:  #27C5FF;
+}
+.advice p{
+    position: relative;
+    color: azure;
+    font-size: 140%;
+    left: 10%;
+    top: 8%;
+    margin: 0;
+    width: 80%;
+}
+.checkbox {
+    display: block;
+    position: relative;
+    top: 0%;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #eee;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox input:checked ~ .checkmark {
+    background-color: #27C5FF;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox .checkmark:after {
+    left: 13px;
+    top:6px;
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

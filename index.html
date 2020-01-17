@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuitForKidFinal</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style-form-nav.css" type="text/css">
+  </head>
+  <body>
+
+      <header onload="hamburgerDrop()">
+          <img class="szpan" alt="logo image" src="logonazwa.png">
+          <!-- <button onclick="hamburgerDrop()" class="hamburger">&#9776;</button>  -->
+      </header>
+      <nav class="menu" id = "menu">
+                  <a href="index-logged.html">HOME</a>
+                  <a href="calendar.html">CALENDAR</a>
+                  <a href="checklist.html">CHECKLIST</a>
+                  <a href="contact.html">CONTACT</a>
+      </nav>
+    
+
+    <div class="bg-div-photo" id="main-page">
+        <!-- <div class="title">
+            <h1>Home</h1>
+        </div> -->
+        <div class="form">
+            <form name="login-form" onsubmit="return loginValidation()" action="calendar.html" method="POST">
+                <input type="text" name="usr" placeholder="username"/>
+                <input type="text" name="pword" placeholder="password"/>
+                <button type="submit">login</button>
+            </form>
+        </div>
+
+        <div class="instructions">Let us help you quit smoking for you and your child. Crate free account below.</div>
+
+
+    </div>
+    <div class="about-us"><p>We are a group of researchers 
+        that tries to help mothers maintain abstinence
+         after pregnancy or to quit smoking for good.
+          Using our app you will be able to track your progress
+           and contact with one of our specialists. Moreover, 
+           we prepared for you a handy checklist that will 
+           prepare and help you during your journey of making healthy motherhood for you and your child.</p></div>
+
+    <div class="bg-div-flex">
+
+        <div class ="box-1">
+                <div class="box-1-photo" id="article-1" title = "smoke ecg"></div>
+                <div class="box-1-description">The reasons why smoking is bad for you</div>
+                <div class="box-1-read-more"><a href="article-1.html">READ MORE</a></div>    
+        </div>
+        <div class ="box-1">
+                <div class="box-1-photo" id="article-2" title = "smoking women"></div>
+                <div class="box-1-description">How does smoking affect the body?</div>
+                <div class="box-1-read-more"><a href="article-2.html">READ MORE</a></div>    
+        </div>
+        <div class ="box-1">
+                <div class="box-1-photo" id="article-3" title = "stack of cigarettes"></div>
+                <div class="box-1-description">How Much Money Does Smoking Cost You?</div>
+                <div class="box-1-read-more"><a href="article-3.html">READ MORE</a></div>    
+        </div>
+        <div class ="box-1">
+                <div class="box-1-photo" id="article-4" title = "tobacco child labour"></div>
+                <div class="box-1-description">Tobacco and Child Labor</div>
+                <div class="box-1-read-more"><a href="article-4.html">READ MORE</a></div>    
+        </div>
+        
+    </div>
+
+    <div class="bg-div-simple" style="background-color: grey">
+        <div class="register">REGISTER HERE</div>
+        <div class="form">
+                <form class="login-form">
+                    <input type="text" placeholder="username"/>
+                    <input type="text" placeholder="password"/>
+                    <input type="text" placeholder="name"/>
+                    <input type="text" placeholder="surname"/>
+                    <input type="text" placeholder="address"/>
+                    <input type="text" placeholder="telephone"/>
+                    <button>register</button>  
+                </form>
+        </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuitForKidFinal</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style-form-nav.css" type="text/css">
+  </head>
+  <body>
+
+      <header onload="hamburgerDrop()">
+          <img class="szpan" alt="logo image" src="logonazwa.png">
+          <button onclick="hamburgerDrop()" class="hamburger">&#9776;</button> 
+      </header>
+      <nav class="menu" id = "menu">
+                  <a href="index-logged.html">HOME</a>
+                  <a href="calendar.html">CALENDAR</a>
+                  <a href="checklist.html">CHECKLIST</a>
+                  <a href="contact.html">CONTACT</a>
+                  <a href="index.html">LOG OUT</a>
+      </nav>
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+    <div class="bg-div-simple" style="background-color:white">
+        <div class="about-contact"><p>Have a question? Ask us!</p></div>
+        
+        <div class="form">
+            <form class="login-form">
+                <input type="text" placeholder="Name"/>
+                <input type="text" placeholder="Surname"/>
+                <textarea class="input-field-1" placeholder="Question"></textarea>
+                <button>Send</button>  
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
